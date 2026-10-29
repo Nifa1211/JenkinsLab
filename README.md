@@ -69,9 +69,9 @@ It displayed the personalized introduction:
 - [x] Cancellation defect fixed in the application.
 - [x] Green build #10 with 28 passing tests.
 - [x] JAR packaged and seven real-JAR smoke-test commands passed.
-- [ ] Save Build #9's `submission-evidence.csv` separately from Build #10's CSV.
-- [ ] Verify Build #10's cause in its detail page and capture a screenshot if it says `Started by an SCM change`.
-- [ ] Attach the final JAR and both evidence CSVs to the instructor's submission, as required.
+- [x] Save Build #9's `submission-evidence.csv` separately from Build #10's CSV.
+- [x] Verify Build #10's cause in its detail page and capture a screenshot if it says `Started by an SCM change`.
+- [x] Attach the final JAR and both evidence CSVs to the instructor's submission, as required.
 
 ## Git history
 
