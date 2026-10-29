@@ -63,13 +63,14 @@ public final class BookingService {
     }
 
     public void cancel(String eventId, String studentId) {
-        validateId(studentId);
-        Registration event = requireEvent(eventId);
-        if (!event.students.contains(studentId)) {
-            throw new IllegalArgumentException("No booking for student: " + studentId);
-        }
-    }
-
+    validateId(studentId);
+    Registration event = requireEvent(eventId);
+   if (!event.students.remove(studentId)) {
+    throw new IllegalArgumentException(
+        "No booking for student: " + studentId
+    );
+}
+}
     public Event event(String id) {
         return requireEvent(id).snapshot();
     }
